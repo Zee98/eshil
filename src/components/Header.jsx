@@ -11,16 +11,23 @@ class Header extends React.Component{
         return (
             <div className="bg-light">
                 <div className="container">
-                <nav className="navbar navbar-expand-lg bg-light">
+                <nav className="bg-light fixed-top navbar navbar-expand-lg bg-light">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="#">
                             <h1>ESHIL</h1>
                         </a>
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                            <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav mb-2 mb-lg-0 ms-auto">
+                    
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ESHIL</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div className="offcanvas-body">
+
+                            <ul className="navbar-nav ms-auto">
                                 <li className="nav-item">
                                     <a className="nav-link active" aria-current="page" href="/">Home</a>
                                 </li>
@@ -34,6 +41,7 @@ class Header extends React.Component{
                                     <a className="nav-link btn btn-outline-success" href='/contact'>Contact us</a>
                                 </li>
                             </ul>
+                        </div>
                         </div>
                     </div>
                 </nav>
