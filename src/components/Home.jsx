@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+import Landing from './landingPage/firstSection';
+import SecondSection from './landingPage/secondSection';
+import ThirdSection from './landingPage/thirdSectioin';
 
 class Home extends React.Component{
     constructor(props){
@@ -7,11 +10,11 @@ class Home extends React.Component{
 
     render(){
         return (
-            <div className="container">
-                <h1>this is the landing page</h1>
-                <p>Home page</p>
-
-            </div>
+            <>
+            <Landing></Landing>
+            <SecondSection></SecondSection>
+            <ThirdSection></ThirdSection>
+            </>
         )
     }
 }

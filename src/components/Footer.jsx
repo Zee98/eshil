@@ -7,8 +7,8 @@ class Footer extends React.Component{
 
     render(){
         return (
-            <footer className="bg-light">
-                <div className="container pt-5 bg-light">
+            <footer className="" style={{backgroundColor:'#F7FFF6'}}>
+                <div className="container pt-5">
                     <div className="row mt-5">
                         <div className="col">
                             <h5>this is the company text.</h5>
